@@ -37,7 +37,7 @@ Pull requests are welcome! If you find bugs or want to suggest features, feel fr
 
 ## 📄 License
 
-This project is open-source and free to use under the [MIT License](LICENSE).
+This project is open-source and free to use.
 
 ~ Priyanka
 
