@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <h1><div class="logo-title">
+  <h1 class="logo-name">⚡ KeyRush</h1>
+
+  <p class="tagline">Type Fast. Stay Sharp.</p>
+</div>
+</h1>
+    
+    <div class="quote" id="quote">Loading...</div>
+    
+    <!-- ✅ NEW: Highlighted text display for colored feedback -->
+    <div id="highlightedText" class="highlighted-text"></div>
+    
+    <textarea id="input" placeholder="Start typing here..." disabled oninput="updateHighlight(); checkCompletion()"></textarea>
+    
+    <div class="info">
+      <p>⏳ Time: <span id="timer">30</span>s</p>
+      <p>⚡ WPM: <span id="wpm">0</span></p>
+      <p>🎯 Accuracy: <span id="accuracy">0</span>%</p>
+    </div>
+    
+    <p id="message" class="message"></p>
+    
+    <div class="buttons">
+      <button onclick="startTest()">Start</button>
+      <button onclick="resetTest()">Restart</button>
+    </div>
+  </div>
+  
+  <canvas id="confetti-canvas"></canvas>
+  <script src="confetti.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
