@@ -1,0 +1,161 @@
+:root {
+  --purple-bg: #f1e3f3;
+  --light-purple: #d6b4fc;
+  --lavender: #b88de4;
+  --deep-purple: #7242aa;
+  --accent: #c272d1;
+  --text-dark: #3d2b4f;
+  --text-light: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--purple-bg);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--light-purple);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(114, 66, 170, 0.3);
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 1.2rem;
+  color: var(--deep-purple);
+  font-size: 2rem;
+}
+
+.quote {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: var(--text-dark);
+  background-color: #f8ebfc;
+  padding: 1rem;
+  border-left: 4px solid var(--deep-purple);
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--lavender);
+  font-size: 1rem;
+  resize: none;
+  box-sizing: border-box;
+  background: #fff6ff;
+  color: var(--text-dark);
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--deep-purple);
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.message {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.highlighted-text {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  min-height: 50px;
+  color: #ccc;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.remaining {
+  color: #999;
+}
+.logo-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo-name {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #A259FF; /* Vivid purple from your 90s theme */
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #FFD6FF;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 1rem; /* This adds space below the title */
+}
+
+
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--deep-purple);
+  color: var(--text-light);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent);
+}
+
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
